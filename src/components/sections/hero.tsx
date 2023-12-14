@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui";
+import { BsChat, BsFileEarmark } from "react-icons/bs";
 
 type Props = {};
 
@@ -23,8 +24,13 @@ const Hero = (props: Props) => {
                     </p>
                 </div>
                 <div className="mt-6 flex justify-center gap-2 md:gap-4 md:max-w-[640px] mx-auto">
-                    <Button text="Get in Touch" url="#" filled={false} />
-                    <Button text="Resume" url="#" />
+                    <Button
+                        text="Get in Touch"
+                        url="#"
+                        filled={false}
+                        icon={<BsChat />}
+                    />
+                    <Button text="Resume" url="#" icon={<BsFileEarmark />} />
                 </div>
             </div>
         </section>
