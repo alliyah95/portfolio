@@ -10,18 +10,18 @@ export const metadata: Metadata = {
         "A Software Engineer based in the Philippines, specializing in building full-stack web applications",
 };
 
-const grotesk = localFont({
+const helvetica = localFont({
     src: [
         {
-            path: "../../public/fonts/NHaasGroteskTXPro-55Rg.ttf",
+            path: "../../public/fonts/HelveticaNeue-Light.otf",
             weight: "400",
         },
         {
-            path: "../../public/fonts/NHaasGroteskTXPro-75Bd.ttf",
+            path: "../../public/fonts/HelveticaNeue-Bold.otf",
             weight: "700",
         },
     ],
-    variable: "--font-grotesk",
+    variable: "--font-helvetica",
     display: "swap",
 });
 
@@ -40,7 +40,7 @@ const RootLayout = (props: Props) => {
     return (
         <html lang="en">
             <body
-                className={`${grotesk.variable} ${prata.variable} font-grotesk`}
+                className={`${helvetica.variable} ${prata.variable} font-helvetica`}
             >
                 {props.children}
             </body>

@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
                     <h1 className="font-prata text-purple-100 mb-5 md:mb-7 2xl:mb-9">
                         Alliyah Joyce Sarip
                     </h1>
-                    <p className="md:max-w-[640px] mx-auto 2xl:text-lg">
+                    <p className="sm:max-w-[462px] md:max-w-[640px] mx-auto 2xl:text-lg">
                         I&apos;m a{" "}
                         <span className="font-bold">Software Engineer</span> who
                         specializes in building full-stack web applications

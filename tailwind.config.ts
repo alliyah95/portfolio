@@ -30,7 +30,7 @@ const config: Config = {
                 },
             },
             fontFamily: {
-                grotesk: ["var(--font-grotesk)", "sans"],
+                helvetica: ["var(--font-helvetica)", "sans"],
                 prata: ["var(--font-prata)", "serif"],
             },
         },
