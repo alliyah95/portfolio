@@ -6,6 +6,9 @@
     html {
         @apply scroll-smooth;
     }
+    img {
+        @apply max-w-full;
+    }
     body {
         @apply bg-white-200 text-black-100 text-sm md:text-base;
     }
@@ -13,17 +16,19 @@
         @apply px-7 md:px-9 xl:px-10 py-20 md:py-24 xl:py-28;
     }
     h1 {
-        @apply text-4xl md:text-5xl xl:text-7xl leading-tight;
+        @apply font-prata text-4xl md:text-5xl 2xl:text-7xl leading-tight;
     }
     h2 {
+        @apply font-prata text-4xl md:text-5xl leading-tight mb-3 md:mb-7;
     }
     h3 {
+        @apply font-prata text-xl md:text-2xl leading-tight;
     }
 }
 
 @layer components {
     .btn {
-        @apply py-2 md:py-4 px-8 md:px-12 flex items-center gap-2 border border-purple-100 transition-all duration-300;
+        @apply py-2 md:py-4 px-8 md:px-12 flex items-center space-x-2 border border-purple-100 transition-all duration-300;
     }
     .btn--filled {
         @apply bg-purple-100 hover:bg-purple-200 text-white-200 hover:border-purple-200;

@@ -12,7 +12,7 @@ const Hero = (props: Props) => {
                     <p className="mb-3 md:mb-4 2xl:mb-6 2xl:text-xl">
                         Hi there! I am
                     </p>
-                    <h1 className="font-prata text-purple-100 mb-5 md:mb-7 2xl:mb-9">
+                    <h1 className="text-purple-100 mb-5 md:mb-7 2xl:mb-9">
                         Alliyah Joyce Sarip
                     </h1>
                     <p className="sm:max-w-[462px] md:max-w-[640px] mx-auto 2xl:text-lg">
@@ -23,7 +23,7 @@ const Hero = (props: Props) => {
                         MongoDB, and Tailwind CSS.
                     </p>
                 </div>
-                <div className="mt-6 flex justify-center gap-2 md:gap-4 md:max-w-[640px] mx-auto">
+                <div className="mt-6 flex justify-center space-x-2 md:space-x-4 md:max-w-[640px] mx-auto">
                     <Button
                         text="Get in Touch"
                         url="#"
