@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Projects } from "@/components/sections";
+import { Hero, Projects, Skills } from "@/components/sections";
 
 type Props = {};
 
@@ -8,6 +8,7 @@ const HomePage = (props: Props) => {
         <>
             <Hero />
             <Projects />
+            <Skills />
         </>
     );
 };
