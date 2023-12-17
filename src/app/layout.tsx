@@ -7,7 +7,14 @@ import { Prata } from "next/font/google";
 export const metadata: Metadata = {
     title: "Alliyah Joyce Sarip",
     description:
-        "A Software Engineer based in the Philippines, specializing in building full-stack web applications",
+        "A Software Developer specializing in building full-stack web applications.",
+    keywords: [
+        "Alliyah Joyce Sarip",
+        "Software Developer",
+        "Web Developer",
+        "Software Engineer",
+        "Full-Stack Developer",
+    ],
 };
 
 const helvetica = localFont({
