@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { BsSend, BsArrowRightSquare } from "react-icons/bs";
+import { BsArrowRightShort } from "react-icons/bs";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ContactFormData } from "@/lib/types";
@@ -63,11 +63,11 @@ const ContactForm = (props: Props) => {
             <div className="mt-4 md:mt-8 flex justify-center">
                 <button
                     type="submit"
-                    className="btn btn--filled w-full md:w-auto py-3 justify-center"
+                    className="btn btn--filled w-full md:w-auto justify-center"
                     disabled={Object.keys(errors).length > 0}
                 >
-                    <div>Send Message</div>
-                    <BsArrowRightSquare className="text-xl" />
+                    <div>Send message</div>
+                    <BsArrowRightShort className="text-2xl" />
                 </button>
             </div>
         </form>

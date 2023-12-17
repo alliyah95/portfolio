@@ -6,7 +6,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
     return (
-        <section className="min-h-[70vh] lg:min-h-screen flex justify-center items-center">
+        <section className="min-h-[50vh] lg:min-h-screen flex justify-center items-center">
             <div className="container text-center">
                 <div>
                     <p className="mb-3 md:mb-4 2xl:mb-6 2xl:text-xl">
@@ -29,8 +29,14 @@ const Hero = (props: Props) => {
                         url="#"
                         filled={false}
                         icon={<BsChat />}
+                        iconPosition="left"
                     />
-                    <Button text="Resume" url="#" icon={<BsFileEarmark />} />
+                    <Button
+                        text="Resume"
+                        url="#"
+                        icon={<BsFileEarmark />}
+                        iconPosition="left"
+                    />
                 </div>
             </div>
         </section>

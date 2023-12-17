@@ -6,7 +6,7 @@ type Props = {};
 
 const ProjectCard = (props: Props) => {
     return (
-        <a className="bg-white-100 cursor-pointer" href="#">
+        <a className="bg-white-100 rounded-sm cursor-pointer" href="#">
             <div>
                 <Image
                     src="/images/projects/sample-project-thumbnail.png"
@@ -16,7 +16,7 @@ const ProjectCard = (props: Props) => {
                     layout="responsive"
                 />
             </div>
-            <div className="text-start p-4 lg:p-7 flex flex-col">
+            <div className="text-start p-5 lg:p-7 flex flex-col">
                 <div className="mb-4 md:mb-6">
                     <h3 className="mb-1">Project Name</h3>
                     <p className="leading-tight">

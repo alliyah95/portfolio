@@ -1,6 +1,6 @@
 import React from "react";
-import { ProjectCard, SectionInfo } from "@/components/ui";
-import { BsArrowRight, BsBoxArrowUpRight } from "react-icons/bs";
+import { Button, ProjectCard, SectionInfo } from "@/components/ui";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 type Props = {};
 
@@ -21,20 +21,19 @@ const Projects = (props: Props) => {
                         <ProjectCard />
                         <ProjectCard />
                     </div>
-                </div>
-            </section>
-            <a
-                className="block bg-purple-100 hover:bg-purple-200 transition-all duration-300 text-white-100 py-6 lg:py-8 -mt-10 lg:-mt-6"
-                href="https://github.com/alliyah95"
-                target="_blank"
-            >
-                <div className="container text-center ">
-                    <div className="flex items-center justify-center space-x-2">
-                        <div>See more projects</div>
-                        <BsBoxArrowUpRight />
+
+                    <div className="flex justify-center mt-7">
+                        <Button
+                            text="View all projects"
+                            url="#"
+                            filled={true}
+                            icon={<BsBoxArrowUpRight />}
+                            iconPosition="right"
+                            fullWidth={true}
+                        />
                     </div>
                 </div>
-            </a>
+            </section>
         </>
     );
 };

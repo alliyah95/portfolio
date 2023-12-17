@@ -5,16 +5,27 @@ type Props = {
     url: string;
     filled?: boolean;
     icon?: React.ReactNode;
+    iconPosition: "left" | "right";
+    fullWidth?: boolean;
 };
 
-const Button = ({ text, url, icon, filled = true }: Props) => {
-    const buttonClasses = filled ? "btn--filled" : "btn--outlined";
+const Button = ({
+    text,
+    url,
+    icon,
+    filled = true,
+    iconPosition,
+    fullWidth = false,
+}: Props) => {
+    const widthType = fullWidth ? "w-full md:w-auto" : "";
+    const buttonType = filled ? "btn--filled" : "btn--outlined";
 
     return (
-        <a className="cursor-pointer" href={url} target="_blank">
-            <div className={`btn ${buttonClasses}`}>
-                {icon}
+        <a className={`cursor-pointer ${widthType}`} href={url} target="_blank">
+            <div className={`btn ${buttonType}`}>
+                {iconPosition === "left" && icon}
                 <div>{text}</div>
+                {iconPosition === "right" && icon}
             </div>
         </a>
     );
