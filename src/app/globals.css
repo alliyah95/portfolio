@@ -24,6 +24,13 @@
     h3 {
         @apply font-prata text-xl md:text-2xl leading-tight;
     }
+    input,
+    textarea {
+        @apply block w-full rounded-none bg-transparent border-b border-b-black-100 hover:outline-none focus:outline-none py-2 placeholder:text-black-100/60;
+    }
+    textarea {
+        @apply resize-none h-[96px] md:h-[128px];
+    }
 }
 
 @layer components {
@@ -35,5 +42,14 @@
     }
     .btn--outlined {
         @apply bg-transparent hover:bg-black-100 text-purple-200 hover:text-white-200 border hover:border-black-100;
+    }
+    .btn[disabled] {
+        @apply cursor-not-allowed;
+    }
+}
+
+@layer utilities {
+    .error-msg {
+        @apply text-sm mt-1 text-start text-purple-100;
     }
 }
