@@ -26,7 +26,7 @@
     }
     input,
     textarea {
-        @apply block w-full rounded-none bg-transparent border-b border-b-black-100 hover:outline-none focus:outline-none py-2 placeholder:text-black-100/60;
+        @apply block w-full rounded-none bg-transparent border-b border-b-black-100/60 focus:border-b-black-100 hover:border-b-black-100 hover:outline-none focus:outline-none py-2 placeholder:text-black-100/60;
     }
     textarea {
         @apply resize-none h-[96px] md:h-[128px];

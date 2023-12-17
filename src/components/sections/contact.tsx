@@ -7,7 +7,7 @@ const Contact = (props: Props) => {
     const devMail = process.env.DEV_EMAIL_ADDRESS;
 
     return (
-        <section>
+        <section className="px-7 md:px-9 xl:px-10 pt-12 pb-20 md:pt-16 xl:py-24">
             <div className="container text-center">
                 <div className="mb-7 md:mb-12 2xl:mb-16">
                     <h2>Get in Touch</h2>
