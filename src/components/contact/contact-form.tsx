@@ -60,7 +60,7 @@ const ContactForm = (props: Props) => {
                     )}
                 </div>
             </div>
-            <div className="mt-4 md:mt-8 flex justify-center">
+            <div className="mt-7 flex justify-center">
                 <button
                     type="submit"
                     className="btn btn--filled w-full md:w-auto justify-center"

@@ -3,18 +3,24 @@ import "./globals.css";
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import { Prata } from "next/font/google";
+import {
+    defaultSeo,
+    siteMetadata,
+    twitterMetadata,
+    openGraphMetadata,
+} from "@/lib/seo";
 
 export const metadata: Metadata = {
-    title: "Alliyah Joyce Sarip",
-    description:
-        "A Software Developer specializing in building full-stack web applications.",
-    keywords: [
-        "Alliyah Joyce Sarip",
-        "Software Developer",
-        "Web Developer",
-        "Software Engineer",
-        "Full-Stack Developer",
-    ],
+    ...defaultSeo,
+    ...siteMetadata,
+    openGraph: {
+        ...defaultSeo,
+        ...openGraphMetadata,
+    },
+    twitter: {
+        ...defaultSeo,
+        ...twitterMetadata,
+    },
 };
 
 const helvetica = localFont({

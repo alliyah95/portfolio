@@ -16,11 +16,9 @@ const Hero = (props: Props) => {
                         Alliyah Joyce Sarip
                     </h1>
                     <p className="sm:max-w-[462px] md:max-w-[640px] mx-auto 2xl:text-lg">
-                        I&apos;m a{" "}
-                        <span className="font-bold">Software Engineer</span> who
-                        specializes in building full-stack web applications
-                        using JavaScript, TypeScript, React.js, Express.js,
-                        MongoDB, and Tailwind CSS.
+                        A <span className="font-bold">Software Developer</span>{" "}
+                        specializing in building full-stack web applications
+                        using the MERN Stack.
                     </p>
                 </div>
                 <div className="mt-6 flex justify-center space-x-2 md:space-x-4 md:max-w-[640px] mx-auto">
