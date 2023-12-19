@@ -2,7 +2,11 @@ import { NextResponse } from "next/server";
 
 const allowedOrigins =
     process.env.NODE_ENV === "production"
-        ? ["https://alliyah.dev/", "https://alliyah.vercel.app/"]
+        ? [
+              "https://alliyah.dev",
+              "https://alliyah.vercel.app",
+              "https://alliyah.dev",
+          ]
         : ["http://localhost:3000"];
 
 export const config = {

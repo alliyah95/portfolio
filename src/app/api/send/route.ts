@@ -32,12 +32,15 @@ export async function POST(request: Request) {
                 react: UserEmailTemplate({ name }),
             });
 
-            return new NextResponse(JSON.stringify({ error: "Message sent" }), {
-                headers: {
-                    "Access-Control-Allow-Origin": origin || "*",
-                },
-                status: 200,
-            });
+            return new NextResponse(
+                JSON.stringify({ success: "Message successfully sent" }),
+                {
+                    headers: {
+                        "Access-Control-Allow-Origin": origin || "*",
+                    },
+                    status: 200,
+                }
+            );
         }
 
         return new NextResponse(
