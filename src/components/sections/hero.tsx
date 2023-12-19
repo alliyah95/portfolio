@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui";
-import { BsChat, BsFileEarmark } from "react-icons/bs";
+import { BsChat, BsFileEarmark, BsChevronDown } from "react-icons/bs";
 
 type Props = {};
 
@@ -8,10 +8,10 @@ const Hero = (props: Props) => {
     return (
         <section
             id="about"
-            className="min-h-[60vh] lg:min-h-screen flex justify-center items-center hero-section"
+            className="hero-section min-h-[84vh] lg:min-h-screen flex flex-col justify-center items-center"
         >
             <div className="container text-center">
-                <div>
+                <div className="hero-info-container">
                     <p className="mb-3 md:mb-4 2xl:mb-6 2xl:text-xl">
                         Hi there! I am
                     </p>
@@ -38,6 +38,13 @@ const Hero = (props: Props) => {
                         icon={<BsFileEarmark />}
                         iconPosition="left"
                     />
+                </div>
+            </div>
+            <div className="hero-chevron relative -bottom-28 md:-bottom-44 transition-all duration-200">
+                <div className="animate-bounce">
+                    <a href="#skills" className="cursor-pointer">
+                        <BsChevronDown className="text-xl md:text-2xl text-purple-100" />
+                    </a>
                 </div>
             </div>
         </section>
