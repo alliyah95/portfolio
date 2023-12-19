@@ -6,7 +6,7 @@ type Props = {};
 
 const Skills = (props: Props) => {
     return (
-        <section>
+        <section className="skills-section">
             <div className="container text-center">
                 <SectionInfo
                     heading="Skills"

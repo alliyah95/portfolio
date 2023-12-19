@@ -55,4 +55,7 @@
     .error-msg {
         @apply text-sm mt-1 text-start text-purple-100;
     }
+    .skills-section {
+        @apply lg:min-h-[80vh] lg:flex lg:justify-center lg:items-center bg-purple-100 text-white-100;
+    }
 }
