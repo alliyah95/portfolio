@@ -6,7 +6,10 @@ type Props = {};
 
 const Hero = (props: Props) => {
     return (
-        <section className="min-h-[50vh] lg:min-h-screen flex justify-center items-center">
+        <section
+            id="about"
+            className="min-h-[60vh] lg:min-h-screen flex justify-center items-center hero-section"
+        >
             <div className="container text-center">
                 <div>
                     <p className="mb-3 md:mb-4 2xl:mb-6 2xl:text-xl">
@@ -24,7 +27,7 @@ const Hero = (props: Props) => {
                 <div className="mt-6 flex justify-center space-x-2 md:space-x-4 md:max-w-[640px] mx-auto">
                     <Button
                         text="Get in Touch"
-                        url="#"
+                        url="#contact"
                         filled={false}
                         icon={<BsChat />}
                         iconPosition="left"

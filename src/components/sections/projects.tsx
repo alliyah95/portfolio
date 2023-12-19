@@ -7,7 +7,7 @@ type Props = {};
 const Projects = (props: Props) => {
     return (
         <>
-            <section>
+            <section id="projects">
                 <div className="container text-center">
                     <SectionInfo
                         heading="Projects"
@@ -25,11 +25,12 @@ const Projects = (props: Props) => {
                     <div className="flex justify-center mt-7">
                         <Button
                             text="View all projects"
-                            url="#"
+                            url="https://github.com/alliyah95"
                             filled={true}
                             icon={<BsBoxArrowUpRight />}
                             iconPosition="right"
                             fullWidth={true}
+                            target="_blank"
                         />
                     </div>
                 </div>

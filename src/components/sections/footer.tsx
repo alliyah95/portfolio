@@ -1,5 +1,5 @@
 import React from "react";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { SocialIcons } from "@/components/ui";
 
 type Props = {};
 
@@ -11,20 +11,10 @@ const Footer = (props: Props) => {
                     <a href="#">alliyah</a>
                 </div>
                 <div className="flex flex-col-reverse md:flex-row md:justify-between">
-                    <p className="text-center">
+                    <p className="text-center mt-2 md:mt-0">
                         &copy; 2023 Alliyah Joyce Sarip. All Rights Reserved.
                     </p>
-                    <div className="flex space-x-2 justify-center text-lg mb-2">
-                        <a href="https://github.com/alliyah95" target="_blank">
-                            <BsGithub />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/alliyahjoyce/"
-                            target="_blank"
-                        >
-                            <BsLinkedin />
-                        </a>
-                    </div>
+                    <SocialIcons changeColorOnHover={false} />
                 </div>
             </div>
         </footer>
