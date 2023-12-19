@@ -79,7 +79,7 @@
     }
     .nav-list {
         @apply bg-white-200 md:bg-transparent flex flex-col -my-1 md:my-0 md:flex-row md:space-x-6 xl:space-x-8 pt-4 py-6 
-        w-screen absolute -left-[100%] top-16 pl-6 md:static md:w-auto md:pl-0 md:left-auto md:py-0 transition-all duration-300;
+        w-screen absolute -left-[105%] top-16 pl-6 md:static md:w-auto md:pl-0 md:left-auto md:py-0 transition-all duration-300;
     }
     .nav-list.nav--open {
         @apply left-0;
@@ -116,7 +116,6 @@
         display: block !important;
     }
 }
-
 @media screen and (min-width: 768px) and (max-height: 520px) {
     .hero-info-container {
         padding-top: 64px;

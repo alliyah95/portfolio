@@ -14,6 +14,7 @@ const SkillItem = ({ src, title }: Props) => {
                 alt={`${title} Logo`}
                 className="h-16 md:h-20 lg:h-24"
             />
+            <p>{title}</p>
         </div>
     );
 };

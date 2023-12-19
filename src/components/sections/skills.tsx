@@ -9,9 +9,8 @@ const Skills = (props: Props) => {
         <section id="skills" className="skills-section">
             <div className="container text-center">
                 <SectionInfo
-                    heading="Skills"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ex lectus. Donec cursus odio tellus, quis 
-                                        vulputate nulla tempor in. Morbi vestibulum."
+                    heading="Skills & Technologies"
+                    description="These are the languages and technologies that I mainly work with when building software."
                 />
 
                 <div className="max-w-[548px] md:max-w-[642px] lg:max-w-[700px] mx-auto flex justify-center flex-wrap -m-2">

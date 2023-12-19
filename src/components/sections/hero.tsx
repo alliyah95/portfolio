@@ -18,7 +18,7 @@ const Hero = (props: Props) => {
                     <h1 className="text-purple-100 mb-5 md:mb-7 2xl:mb-9">
                         Alliyah Joyce Sarip
                     </h1>
-                    <p className="sm:max-w-[462px] md:max-w-[640px] mx-auto 2xl:text-lg">
+                    <p className="sm:max-w-[462px] md:max-w-[560px] mx-auto 2xl:text-lg">
                         A <span className="font-bold">Software Developer</span>{" "}
                         specializing in building full-stack web applications
                         using the MERN Stack.
