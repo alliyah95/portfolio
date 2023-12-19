@@ -31,6 +31,20 @@
     textarea {
         @apply resize-none h-[96px] md:h-[128px];
     }
+    /* START - custom scrollbar */
+    ::-webkit-scrollbar {
+        @apply w-1 md:w-2;
+    }
+    ::-webkit-scrollbar-track {
+        @apply bg-transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply bg-purple-100;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-purple-200;
+    }
+    /* END - custom scrollbar */
 }
 
 @layer components {
