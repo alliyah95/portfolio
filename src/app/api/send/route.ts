@@ -1,5 +1,6 @@
-import { DevEmailTemplate, UserEmailTemplate } from "@/components/contact";
+import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { DevEmailTemplate, UserEmailTemplate } from "@/components/contact";
 import { ContactFormData } from "@/lib/types";
 import { generateEmailId } from "@/lib/contact";
 
@@ -11,6 +12,8 @@ export async function POST(request: Request) {
     const { name, email, message }: ContactFormData = await request.json();
     const emailId = generateEmailId();
 
+    const origin = request.headers.get("origin");
+
     try {
         // send email to me <alliyah>
         const dataDev = await resend.emails.send({
@@ -21,14 +24,31 @@ export async function POST(request: Request) {
         });
 
         // send confirmation email to user
-        const dataUser = await resend.emails.send({
-            from: `Alliyah Joyce Sarip <${devWorkEmail}>`,
-            to: email,
-            subject: `Contact Form Submission | ${emailId}`,
-            react: UserEmailTemplate({ name }),
-        });
+        if (dataDev && !dataDev.error) {
+            await resend.emails.send({
+                from: `Alliyah Joyce Sarip <${devWorkEmail}>`,
+                to: email,
+                subject: `Contact Form Submission | ${emailId}`,
+                react: UserEmailTemplate({ name }),
+            });
 
-        return Response.json(dataDev);
+            return new NextResponse(JSON.stringify({ error: "Message sent" }), {
+                headers: {
+                    "Access-Control-Allow-Origin": origin || "*",
+                },
+                status: 200,
+            });
+        }
+
+        return new NextResponse(
+            JSON.stringify({ error: "Internal Server Error" }),
+            {
+                headers: {
+                    "Access-Control-Allow-Origin": origin || "*",
+                },
+                status: 500,
+            }
+        );
     } catch (error) {
         return Response.json({ error });
     }

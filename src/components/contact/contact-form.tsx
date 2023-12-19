@@ -1,15 +1,37 @@
 "use client";
 
-import React from "react";
-import { BsArrowRightShort } from "react-icons/bs";
+import React, { useState } from "react";
+import { PiPaperPlaneRight } from "react-icons/pi";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ContactFormData } from "@/lib/types";
 import { contactSchema } from "@/lib/contact";
+import { Spinner } from "@/components/ui";
 
 type Props = {};
 
+const buttonStatus = {
+    default: (
+        <>
+            <div>Send message</div>
+            <PiPaperPlaneRight />
+        </>
+    ),
+    loading: (
+        <>
+            <div>Sending message</div>
+            <Spinner />
+        </>
+    ),
+    success: <div>Message sent!</div>,
+    error: <div>Error! Try again.</div>,
+} as const;
+
 const ContactForm = (props: Props) => {
+    const [buttonContent, setButtonContent] = useState<React.ReactNode>(
+        buttonStatus.default
+    );
+
     const {
         register,
         handleSubmit,
@@ -18,6 +40,8 @@ const ContactForm = (props: Props) => {
     } = useForm<ContactFormData>({ resolver: zodResolver(contactSchema) });
 
     const handleForm = async (data: ContactFormData): Promise<void> => {
+        setButtonContent(buttonStatus.loading);
+
         const response = await fetch("/api/send", {
             method: "POST",
             headers: {
@@ -25,6 +49,15 @@ const ContactForm = (props: Props) => {
             },
             body: JSON.stringify(data),
         });
+
+        if (!response.ok || response.status === 500) {
+            setButtonContent(buttonStatus.error);
+        }
+
+        setButtonContent(buttonStatus.success);
+        setTimeout(() => {
+            setButtonContent(buttonStatus.default);
+        }, 8000);
         reset();
     };
 
@@ -63,11 +96,10 @@ const ContactForm = (props: Props) => {
             <div className="mt-7 flex justify-center">
                 <button
                     type="submit"
-                    className="btn btn--filled w-full md:w-auto justify-center"
+                    className="btn btn--filled w-full md:w-auto justify-center items-center"
                     disabled={Object.keys(errors).length > 0}
                 >
-                    <div>Send message</div>
-                    <BsArrowRightShort className="text-2xl" />
+                    {buttonContent}
                 </button>
             </div>
         </form>
