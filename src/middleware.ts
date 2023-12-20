@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
 
+const currentBranchDeployment = process.env.BRANCH_DEPLOYMENT_URL as string;
 const allowedOrigins =
     process.env.NODE_ENV === "production"
         ? [
               "https://alliyah.dev",
               "https://alliyah.vercel.app",
-              "https://alliyah.dev",
+              currentBranchDeployment,
           ]
         : ["http://localhost:3000"];
 

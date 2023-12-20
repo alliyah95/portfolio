@@ -10,7 +10,7 @@ import { Spinner } from "@/components/ui";
 
 type Props = {};
 
-const buttonStatus = {
+const buttonStatusList = {
     default: (
         <>
             <div>Send message</div>
@@ -28,8 +28,8 @@ const buttonStatus = {
 } as const;
 
 const ContactForm = (props: Props) => {
-    const [buttonContent, setButtonContent] = useState<React.ReactNode>(
-        buttonStatus.default
+    const [buttonStatus, setButtonStatus] = useState<React.ReactNode>(
+        buttonStatusList.default
     );
 
     const {
@@ -40,7 +40,7 @@ const ContactForm = (props: Props) => {
     } = useForm<ContactFormData>({ resolver: zodResolver(contactSchema) });
 
     const handleForm = async (data: ContactFormData): Promise<void> => {
-        setButtonContent(buttonStatus.loading);
+        setButtonStatus(buttonStatusList.loading);
 
         const response = await fetch("/api/send", {
             method: "POST",
@@ -51,12 +51,13 @@ const ContactForm = (props: Props) => {
         });
 
         if (!response.ok || response.status === 500) {
-            setButtonContent(buttonStatus.error);
+            setButtonStatus(buttonStatusList.error);
+        } else {
+            setButtonStatus(buttonStatusList.success);
         }
 
-        setButtonContent(buttonStatus.success);
         setTimeout(() => {
-            setButtonContent(buttonStatus.default);
+            setButtonStatus(buttonStatusList.default);
         }, 8000);
         reset();
     };
@@ -97,9 +98,13 @@ const ContactForm = (props: Props) => {
                 <button
                     type="submit"
                     className="btn btn--filled w-full md:w-auto justify-center items-center"
-                    disabled={Object.keys(errors).length > 0}
+                    disabled={
+                        Object.keys(errors).length > 0 ||
+                        (buttonStatus !== undefined &&
+                            buttonStatus !== buttonStatusList.default)
+                    }
                 >
-                    {buttonContent}
+                    {buttonStatus}
                 </button>
             </div>
         </form>
