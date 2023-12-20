@@ -1,13 +1,11 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+    text: string;
+};
 
-const Chip = (props: Props) => {
-    return (
-        <div className="w-auto m-1 rounded-full border border-purple-100 text-purple-100 py-px px-6 text-xs md:text-sm">
-            Chip
-        </div>
-    );
+const Chip = ({ text }: Props) => {
+    return <div className="chip">{text}</div>;
 };
 
 export default Chip;

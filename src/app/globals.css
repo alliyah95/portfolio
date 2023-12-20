@@ -65,6 +65,10 @@
     .nav-link {
         @apply hover:text-purple-100;
     }
+    .chip {
+        @apply w-auto m-0.5 rounded-full border border-purple-100 text-purple-100 py-px px-2 text-xs md:text-sm
+        transition-all duration-200;
+    }
 }
 
 @layer utilities {
@@ -92,6 +96,9 @@
     }
     .hero-chevron {
         @apply hidden;
+    }
+    .project-links {
+        @apply lg:absolute lg:-bottom-[42px] lg:right-0 transition-all duration-300 z-20 relative;
     }
 }
 
@@ -122,3 +129,19 @@
     }
 }
 /* END - custom breakpoints for hero elements */
+
+/* START - projects section custom CSS */
+.project-card-img-container::before {
+    @apply absolute inset-0 lg:bg-black-100 transition-all duration-300 opacity-10 z-[1];
+    content: "";
+}
+.project-card:hover .chip {
+    @apply bg-purple-100 text-white-200;
+}
+.project-card:hover .project-card-img-container::before {
+    @apply opacity-0;
+}
+.project-card:hover .project-links {
+    @apply lg:bottom-0;
+}
+/* END - projects section custom CSS */

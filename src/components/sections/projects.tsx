@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, ProjectCard, SectionInfo } from "@/components/ui";
 import { BsBoxArrowUpRight } from "react-icons/bs";
+import { Button, ProjectCard, SectionInfo } from "@/components/ui";
+import { projectList } from "@/lib/projects";
 
 type Props = {};
 
@@ -11,15 +12,21 @@ const Projects = (props: Props) => {
                 <div className="container text-center">
                     <SectionInfo
                         heading="Projects"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ex lectus. Donec cursus odio tellus, quis 
-                    vulputate nulla tempor in. Morbi vestibulum."
+                        description="Check out some of the personal projects that I've built using the abovementioned technologies."
                     />
 
-                    <div className="max-w-[1048px] mx-auto grid md:grid-cols-2 gap-7">
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
+                    <div className="max-w-[940px] mx-auto grid md:grid-cols-2 gap-6">
+                        {projectList.map((project, index) => (
+                            <ProjectCard
+                                key={index}
+                                thumbnail={project.thumbnail}
+                                title={project.title}
+                                description={project.description}
+                                tags={project.tags}
+                                url={project.url}
+                                gitHubRepo={project.gitHubRepo}
+                            />
+                        ))}
                     </div>
 
                     <div className="flex justify-center mt-7">

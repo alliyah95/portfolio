@@ -21,7 +21,7 @@ const Contact = (props: Props) => {
                         at{" "}
                         <a
                             href={`mailto:${devMail}`}
-                            className="text-purple-100 underline"
+                            className="text-purple-100 underline underline-offset-2"
                         >
                             contact@alliyah.dev
                         </a>
