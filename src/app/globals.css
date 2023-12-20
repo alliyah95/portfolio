@@ -60,7 +60,7 @@
         @apply py-6 md:py-8 2xl:py-14 px-6 md:px-9 xl:px-10 bg-white-200 relative z-50 transition-all duration-200;
     }
     .nav-item {
-        @apply my-px md:my-1;
+        @apply my-0.5 md:my-0;
     }
     .nav-link {
         @apply hover:text-purple-100;
@@ -78,7 +78,7 @@
         @apply pt-20;
     }
     .nav-list {
-        @apply bg-white-200 md:bg-transparent flex flex-col -my-1 md:my-0 md:flex-row md:space-x-6 xl:space-x-8 pt-4 py-6 
+        @apply bg-white-200 md:bg-transparent flex flex-col -my-0.5 md:my-0 md:flex-row md:space-x-6 xl:space-x-8 pt-4 py-6 
         w-screen absolute -left-[105%] top-16 pl-6 md:static md:w-auto md:pl-0 md:left-auto md:py-0 transition-all duration-300;
     }
     .nav-list.nav--open {
@@ -88,7 +88,7 @@
         @apply 2xl:py-9;
     }
     .nav-btn {
-        @apply md:hidden relative top-1;
+        @apply md:hidden relative top-1 -ml-1;
     }
     .hero-chevron {
         @apply hidden;

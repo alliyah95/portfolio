@@ -14,6 +14,10 @@ const Navbar = (props: Props) => {
         setIsMobileNavOpen(!isMobileNavOpen);
     };
 
+    const handleNavItemClick = (): void => {
+        setIsMobileNavOpen(false);
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             const scrolled = window.scrollY > 0;
@@ -42,22 +46,38 @@ const Navbar = (props: Props) => {
                                 }`}
                             >
                                 <li className="nav-item">
-                                    <a href="#about" className="nav-link">
+                                    <a
+                                        href="#about"
+                                        className="nav-link"
+                                        onClick={handleNavItemClick}
+                                    >
                                         About
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#skills" className="nav-link">
+                                    <a
+                                        href="#skills"
+                                        className="nav-link"
+                                        onClick={handleNavItemClick}
+                                    >
                                         Skills
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#projects" className="nav-link">
+                                    <a
+                                        href="#projects"
+                                        className="nav-link"
+                                        onClick={handleNavItemClick}
+                                    >
                                         Projects
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#contact" className="nav-link">
+                                    <a
+                                        href="#contact"
+                                        className="nav-link"
+                                        onClick={handleNavItemClick}
+                                    >
                                         Contact
                                     </a>
                                 </li>
