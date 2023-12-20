@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import { VscGithubAlt } from "react-icons/vsc";
-import { Button, Chip } from "@/components/ui";
+import Image from "next/legacy/image";
+import { Chip } from "@/components/ui";
 
 export type Props = {
     thumbnail: string;
@@ -26,8 +25,8 @@ const ProjectCard = ({
                 <Image
                     src={thumbnail}
                     alt={`${title} Thumbnail`}
-                    width={480}
-                    height={260}
+                    width={560}
+                    height={372}
                     layout="responsive"
                 />
                 <div className="project-links bg-purple-100 py-2 px-4 text-white-200">
@@ -35,7 +34,7 @@ const ProjectCard = ({
                         <a
                             target="_blank"
                             href={gitHubRepo}
-                            className="cursor-pointer hover:underline hover:underline-offset-2"
+                            className="cursor-pointer hover:underline hover:underline-offset-4"
                         >
                             View Repo
                         </a>
@@ -45,7 +44,7 @@ const ProjectCard = ({
                                 <a
                                     target="_blank"
                                     href={url}
-                                    className="cursor-pointer hover:underline hover:underline-offset-2"
+                                    className="cursor-pointer hover:underline hover:underline-offset-4"
                                 >
                                     Live URL
                                 </a>

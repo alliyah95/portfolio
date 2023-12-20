@@ -1,16 +1,20 @@
+"use client";
+
 import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { JackInTheBox } from "react-awesome-reveal";
 
 type Props = {
     changeColorOnHover: boolean;
+    animate?: boolean;
 };
 
-const SocialIcons = ({ changeColorOnHover }: Props) => {
+const SocialIcons = ({ changeColorOnHover, animate = false }: Props) => {
     const linkClassNames = changeColorOnHover ? "nav-link" : "";
 
-    return (
-        <div>
-            <div className="flex space-x-2 md:space-x-3 justify-center text-lg">
+    const content = (
+        <ul className="flex space-x-2 md:space-x-3 justify-center text-lg">
+            <li>
                 <a
                     href="https://github.com/alliyah95"
                     target="_blank"
@@ -18,6 +22,8 @@ const SocialIcons = ({ changeColorOnHover }: Props) => {
                 >
                     <BsGithub />
                 </a>
+            </li>
+            <li>
                 <a
                     href="https://www.linkedin.com/in/alliyahjoyce/"
                     target="_blank"
@@ -25,9 +31,27 @@ const SocialIcons = ({ changeColorOnHover }: Props) => {
                 >
                     <BsLinkedin />
                 </a>
-            </div>
-        </div>
+            </li>
+        </ul>
     );
+
+    if (animate) {
+        return (
+            <div>
+                <JackInTheBox
+                    cascade={true}
+                    damping={0.1}
+                    delay={600}
+                    duration={1000}
+                    triggerOnce={true}
+                >
+                    {content}
+                </JackInTheBox>
+            </div>
+        );
+    }
+
+    return content;
 };
 
 export default SocialIcons;

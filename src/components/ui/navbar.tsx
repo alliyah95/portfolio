@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { JackInTheBox } from "react-awesome-reveal";
 import { BsList } from "react-icons/bs";
-import { SocialIcons } from ".";
+import { SocialIcons } from "@/components/ui";
 
 type Props = {};
 
@@ -37,53 +38,71 @@ const Navbar = (props: Props) => {
                 <div className="container">
                     <div className="flex justify-between items-center">
                         <div>
-                            <button className="nav-btn" onClick={handleNavList}>
-                                <BsList className="text-2xl" />
-                            </button>
-                            <ul
-                                className={`nav-list ${
-                                    isMobileNavOpen ? "nav--open" : ""
-                                }`}
+                            <JackInTheBox
+                                delay={600}
+                                duration={1000}
+                                triggerOnce={true}
                             >
-                                <li className="nav-item">
-                                    <a
-                                        href="#about"
-                                        className="nav-link"
-                                        onClick={handleNavItemClick}
-                                    >
-                                        About
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a
-                                        href="#skills"
-                                        className="nav-link"
-                                        onClick={handleNavItemClick}
-                                    >
-                                        Skills
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a
-                                        href="#projects"
-                                        className="nav-link"
-                                        onClick={handleNavItemClick}
-                                    >
-                                        Projects
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a
-                                        href="#contact"
-                                        className="nav-link"
-                                        onClick={handleNavItemClick}
-                                    >
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
+                                <button
+                                    className="nav-btn"
+                                    onClick={handleNavList}
+                                >
+                                    <BsList className="text-2xl" />
+                                </button>
+                            </JackInTheBox>
+
+                            <JackInTheBox
+                                cascade={true}
+                                damping={0.1}
+                                delay={600}
+                                duration={1000}
+                                triggerOnce={true}
+                            >
+                                <ul
+                                    className={`nav-list ${
+                                        isMobileNavOpen ? "nav--open" : ""
+                                    }`}
+                                >
+                                    <li className="nav-item">
+                                        <a
+                                            href="#about"
+                                            className="nav-link"
+                                            onClick={handleNavItemClick}
+                                        >
+                                            About
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a
+                                            href="#skills"
+                                            className="nav-link"
+                                            onClick={handleNavItemClick}
+                                        >
+                                            Skills
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a
+                                            href="#projects"
+                                            className="nav-link"
+                                            onClick={handleNavItemClick}
+                                        >
+                                            Projects
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a
+                                            href="#contact"
+                                            className="nav-link"
+                                            onClick={handleNavItemClick}
+                                        >
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </JackInTheBox>
                         </div>
-                        <SocialIcons changeColorOnHover={true} />
+                        <SocialIcons changeColorOnHover={true} animate={true} />
                     </div>
                 </div>
             </nav>

@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { JackInTheBox } from "react-awesome-reveal";
 import { SectionInfo, SkillItem } from "@/components/ui";
 import { skillItems } from "@/lib/skills";
 
@@ -14,13 +17,20 @@ const Skills = (props: Props) => {
                 />
 
                 <div className="max-w-[548px] md:max-w-[642px] lg:max-w-[700px] mx-auto flex justify-center flex-wrap -m-2">
-                    {skillItems.map((skillItem, ind) => (
-                        <SkillItem
-                            key={ind}
-                            src={skillItem.src}
-                            title={skillItem.title}
-                        />
-                    ))}
+                    <JackInTheBox
+                        cascade={true}
+                        damping={0.08}
+                        triggerOnce={true}
+                        delay={200}
+                    >
+                        {skillItems.map((skillItem, ind) => (
+                            <SkillItem
+                                key={ind}
+                                src={skillItem.src}
+                                title={skillItem.title}
+                            />
+                        ))}
+                    </JackInTheBox>
                 </div>
             </div>
         </section>
