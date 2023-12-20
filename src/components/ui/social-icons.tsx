@@ -10,7 +10,6 @@ const SocialIcons = ({ changeColorOnHover }: Props) => {
 
     return (
         <div>
-            {" "}
             <div className="flex space-x-2 md:space-x-3 justify-center text-lg">
                 <a
                     href="https://github.com/alliyah95"
