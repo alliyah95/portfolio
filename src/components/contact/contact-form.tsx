@@ -31,7 +31,7 @@ const ContactForm = (props: Props) => {
     const [buttonStatus, setButtonStatus] = useState<React.ReactNode>(
         buttonStatusList.default
     );
-
+    const [isTimeoutDone, setIsTimeoutDone] = useState<boolean>(true);
     const {
         register,
         handleSubmit,
@@ -40,6 +40,11 @@ const ContactForm = (props: Props) => {
     } = useForm<ContactFormData>({ resolver: zodResolver(contactSchema) });
 
     const handleForm = async (data: ContactFormData): Promise<void> => {
+        if (!isTimeoutDone) {
+            return;
+        }
+
+        setIsTimeoutDone(false);
         setButtonStatus(buttonStatusList.loading);
 
         const response = await fetch("/api/send", {
@@ -58,7 +63,8 @@ const ContactForm = (props: Props) => {
 
         setTimeout(() => {
             setButtonStatus(buttonStatusList.default);
-        }, 8000);
+            setIsTimeoutDone(true);
+        }, 6000);
         reset();
     };
 

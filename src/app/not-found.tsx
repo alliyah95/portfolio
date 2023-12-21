@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 const NotFound = (props: Props) => {
     return (
         <section className="page-404">
-            <title>Not found</title>
             <div className="container text-center">
                 <h1 className="mb-1 text-3xl lg:text-4xl">Page not found.</h1>
                 <p>The entered URL does not exist on this site.</p>
