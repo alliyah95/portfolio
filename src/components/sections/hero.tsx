@@ -3,6 +3,7 @@
 import React from "react";
 import { BsChat, BsFileEarmark, BsChevronDown } from "react-icons/bs";
 import { Fade, JackInTheBox } from "react-awesome-reveal";
+import { GridBackground } from "@/components/grid";
 import { Button } from "@/components/ui";
 
 type Props = {};
@@ -11,8 +12,9 @@ const Hero = (props: Props) => {
     return (
         <section
             id="about"
-            className="hero-section min-h-[84vh] lg:min-h-screen flex flex-col justify-center items-center"
+            className="hero-section min-h-[84vh] lg:min-h-screen flex flex-col justify-center items-center relative"
         >
+            <GridBackground />
             <div className="container text-center">
                 <div className="hero-info-container">
                     <Fade triggerOnce={true} duration={300}>

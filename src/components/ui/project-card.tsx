@@ -20,7 +20,7 @@ const ProjectCard = ({
     gitHubRepo,
 }: Props) => {
     return (
-        <div className="project-card border border-purple-100 rounded-sm">
+        <div className="project-card border border-purple-100 rounded-sm h-full">
             <div className="relative project-card-img-container">
                 <Image
                     src={thumbnail}

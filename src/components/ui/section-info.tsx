@@ -10,7 +10,7 @@ type Props = {
 
 const SectionInfo = ({ heading, description }: Props) => {
     return (
-        <Fade triggerOnce={true} fraction={0.15}>
+        <Fade triggerOnce={true} fraction={0.2} delay={100}>
             <div className="mb-7 md:mb-12 2xl:mb-16">
                 <h2>{heading}</h2>
                 <p className="max-w-[560px] mx-auto 2xl:text-lg">

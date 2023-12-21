@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const config: Config = {
     content: [
@@ -7,6 +8,10 @@ const config: Config = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
+        screens: {
+            sml: "500px",
+            ...defaultTheme.screens,
+        },
         container: {
             center: true,
             screens: {

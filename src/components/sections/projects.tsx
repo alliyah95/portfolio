@@ -19,7 +19,12 @@ const Projects = (props: Props) => {
                     />
 
                     <div className="max-w-[940px] mx-auto grid md:grid-cols-2 gap-6">
-                        <Fade triggerOnce={true} cascade={true} damping={0.2}>
+                        <Fade
+                            triggerOnce={true}
+                            cascade={true}
+                            damping={0.2}
+                            delay={100}
+                        >
                             {projectList.map((project, index) => (
                                 <ProjectCard
                                     key={index}

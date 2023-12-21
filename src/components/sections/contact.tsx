@@ -13,7 +13,7 @@ const Contact = (props: Props) => {
             className="px-7 md:px-9 xl:px-10 pt-12 pb-20 md:pt-16 xl:py-24"
         >
             <div className="container text-center">
-                <Fade triggerOnce={true} fraction={0.2}>
+                <Fade triggerOnce={true} fraction={0.2} delay={200}>
                     <div className="mb-7 md:mb-12 2xl:mb-16">
                         <h2>Get in Touch</h2>
                         <p className="max-w-[590px] mx-auto 2xl:text-lg">
@@ -30,7 +30,7 @@ const Contact = (props: Props) => {
                         </p>
                     </div>
                 </Fade>
-                <Fade triggerOnce={true} delay={200}>
+                <Fade triggerOnce={true} delay={300}>
                     <div className="max-w-[600px] mx-auto">
                         <ContactForm />
                     </div>

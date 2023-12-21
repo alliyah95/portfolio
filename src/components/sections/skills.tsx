@@ -21,7 +21,7 @@ const Skills = (props: Props) => {
                         cascade={true}
                         damping={0.08}
                         triggerOnce={true}
-                        delay={200}
+                        delay={100}
                     >
                         {skillItems.map((skillItem, ind) => (
                             <SkillItem
