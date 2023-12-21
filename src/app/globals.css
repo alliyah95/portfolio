@@ -78,6 +78,9 @@
     .skills-section {
         @apply lg:min-h-[80vh] lg:flex lg:justify-center lg:items-center bg-purple-100 text-white-200 py-24;
     }
+    .page-404 {
+        @apply min-h-screen flex justify-center items-center;
+    }
     .hero-section {
         @apply pt-20;
     }

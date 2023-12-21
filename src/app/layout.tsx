@@ -1,27 +1,7 @@
 import React from "react";
 import "./globals.css";
-import { Metadata } from "next";
 import localFont from "next/font/local";
 import { Prata } from "next/font/google";
-import {
-    defaultSeo,
-    siteMetadata,
-    twitterMetadata,
-    openGraphMetadata,
-} from "@/lib/seo";
-
-export const metadata: Metadata = {
-    ...defaultSeo,
-    ...siteMetadata,
-    openGraph: {
-        ...defaultSeo,
-        ...openGraphMetadata,
-    },
-    twitter: {
-        ...defaultSeo,
-        ...twitterMetadata,
-    },
-};
 
 const helvetica = localFont({
     src: [
