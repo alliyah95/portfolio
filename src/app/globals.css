@@ -13,10 +13,10 @@
         @apply max-w-full;
     }
     body {
-        @apply bg-white-200 text-black-100 text-sm md:text-base;
+        @apply bg-white-200 text-black-100 text-sm md:text-base dark:text-white-200 dark:bg-black-200;
     }
     section {
-        @apply px-6 md:px-9 xl:px-10 py-12 md:py-16 xl:py-24;
+        @apply px-6 md:px-9 xl:px-10 py-12 md:py-16 xl:py-24 dark:bg-black-200;
     }
     h1 {
         @apply font-prata text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl leading-tight;
@@ -30,7 +30,8 @@
     textarea,
     input {
         @apply block w-full rounded-none bg-transparent border-b border-b-black-100/60 outline-none
-        focus:border-b-black-100 py-2 placeholder:text-black-100/60;
+        focus:border-b-black-100 py-2 placeholder:text-black-100/60
+        dark:border-b-white-200 dark:placeholder:text-white-200 dark:focus:border-b-white-100;
     }
     textarea {
         @apply resize-none h-[96px] md:h-[128px];
@@ -48,7 +49,8 @@
         @apply bg-purple-100 hover:bg-purple-200 text-white-200 hover:border-purple-200;
     }
     .btn--outlined {
-        @apply bg-transparent hover:bg-black-100 text-purple-200 hover:text-white-200 border hover:border-black-100;
+        @apply bg-transparent hover:bg-black-100 text-purple-200 hover:text-white-200 border hover:border-black-100 dark:border-white-200
+        dark:text-white-200 dark:hover:bg-white-200 dark:hover:text-black-200;
     }
     .btn[disabled] {
         @apply cursor-not-allowed;
@@ -57,13 +59,14 @@
         @apply w-full md:w-auto;
     }
     .nav {
-        @apply py-6 md:py-8 2xl:py-14 px-6 md:px-9 xl:px-10 bg-white-200 relative z-50 transition-all duration-200;
+        @apply py-6 md:py-8 2xl:py-14 px-6 md:px-9 xl:px-10 bg-white-200 relative z-50 transition-all duration-200
+        dark:bg-black-200;
     }
     .nav-item {
         @apply my-0.5 md:my-0;
     }
     .nav-link {
-        @apply hover:text-purple-100;
+        @apply hover:text-purple-100 dark:hover:text-white-200 dark:hover:underline dark:hover:underline-offset-8;
     }
     .chip {
         @apply w-auto m-0.5 rounded-full border border-purple-100 bg-purple-100 text-white-200 md:bg-transparent md:text-purple-100 
@@ -76,14 +79,16 @@
         @apply text-sm mt-1 text-start text-purple-100;
     }
     .skills-section {
-        @apply lg:min-h-[80vh] lg:flex lg:justify-center lg:items-center bg-purple-100 text-white-200 py-24;
+        @apply lg:min-h-[80vh] lg:flex lg:justify-center lg:items-center bg-purple-100 text-white-200 py-24
+        dark:bg-purple-100;
     }
     .hero-section {
         @apply pt-20;
     }
     .nav-list {
         @apply bg-white-200 md:bg-transparent flex flex-col -my-0.5 md:my-0 md:flex-row md:space-x-6 xl:space-x-8 pt-4 py-6 
-        w-screen absolute -left-[105%] top-16 pl-6 md:static md:w-auto md:pl-0 md:left-auto md:py-0 transition-all duration-300;
+        w-screen absolute -left-[105%] top-16 pl-6 md:static md:w-auto md:pl-0 md:left-auto md:py-0 transition-all duration-300
+        dark:bg-black-200;
     }
     .nav-list.nav--open {
         @apply left-0;

@@ -54,7 +54,7 @@ const ProjectCard = ({
                 </div>
             </div>
             <div className="border-t border-t-purple-100 relative lg:z-30">
-                <div className="text-start px-5 pt-5 lg:pt-7 lg:px-7 flex flex-col bg-white-200">
+                <div className="text-start px-5 pt-5 lg:pt-7 lg:px-7 flex flex-col bg-white-200 dark:bg-black-200">
                     <h3 className="mb-1">{title}</h3>
                     <p className="leading-tight">{description}</p>
                 </div>

@@ -53,7 +53,7 @@ const RootLayout = (props: Props) => {
     return (
         <html lang="en">
             <body
-                className={`${helvetica.variable} ${prata.variable} font-helvetica`}
+                className={`${helvetica.variable} ${prata.variable} font-helvetica dark`}
             >
                 {props.children}
             </body>

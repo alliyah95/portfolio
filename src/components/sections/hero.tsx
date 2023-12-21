@@ -66,7 +66,7 @@ const Hero = (props: Props) => {
                 <div className="hero-chevron relative -bottom-28 md:-bottom-44 transition-all duration-200">
                     <div className="animate-bounce">
                         <a href="#skills" className="cursor-pointer">
-                            <BsChevronDown className="text-xl md:text-2xl text-purple-100" />
+                            <BsChevronDown className="text-xl md:text-2xl text-purple-100 dark:text-white-200" />
                         </a>
                     </div>
                 </div>

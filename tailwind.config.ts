@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+    class: "dark",
     content: [
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -22,11 +23,11 @@ const config: Config = {
                 purple: {
                     100: "#836B9C",
                     200: "#6C5585",
+                    300: "#654f7d",
                 },
                 black: {
                     100: "#323333",
-                    200: "#1C1F1F",
-                    300: "#121313",
+                    200: "#2C2930",
                 },
             },
             fontFamily: {
