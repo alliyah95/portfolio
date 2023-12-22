@@ -25,6 +25,7 @@ const Navbar = (props: Props) => {
             setIsScrolled(scrolled);
         };
 
+        handleScroll();
         window.addEventListener("scroll", handleScroll);
 
         return () => {
