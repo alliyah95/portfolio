@@ -30,11 +30,11 @@ const ProjectCard = ({
                     layout="responsive"
                 />
                 <div className="project-links bg-purple-100 py-2 px-4 text-white-200">
-                    <div className="flex space-x-2 justify-end lg:justify-start">
+                    <div className="flex space-x-2 justify-end">
                         <a
                             target="_blank"
                             href={gitHubRepo}
-                            className="cursor-pointer hover:underline hover:underline-offset-4"
+                            className="project-link"
                         >
                             View Repo
                         </a>
@@ -44,9 +44,9 @@ const ProjectCard = ({
                                 <a
                                     target="_blank"
                                     href={url}
-                                    className="cursor-pointer hover:underline hover:underline-offset-4"
+                                    className="project-link"
                                 >
-                                    Live URL
+                                    Live Demo
                                 </a>
                             </>
                         )}
@@ -54,8 +54,8 @@ const ProjectCard = ({
                 </div>
             </div>
             <div className="border-t border-t-purple-100 relative lg:z-30">
-                <div className="text-start px-5 pt-5 lg:pt-7 lg:px-7 flex flex-col bg-white-200">
-                    <h3 className="mb-1">{title}</h3>
+                <div className="text-start px-5 pt-5 lg:pt-7 lg:px-7 bg-white-200">
+                    <h3 className="project-title">{title}</h3>
                     <p className="leading-tight">{description}</p>
                 </div>
                 <div className="pt-4 lg:pt-5 px-5 pb-5 lg:pb-7 mt-auto flex flex-wrap -m-0.5">

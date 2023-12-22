@@ -15,7 +15,7 @@ const Projects = (props: Props) => {
                 <div className="container text-center">
                     <SectionInfo
                         heading="Projects"
-                        description="Check out some of the personal projects that I've built using the abovementioned technologies."
+                        description="Check out some of the projects that I've built using the abovementioned technologies."
                     />
 
                     <div className="max-w-[940px] mx-auto grid md:grid-cols-2 gap-6">
