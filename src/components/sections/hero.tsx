@@ -6,9 +6,7 @@ import { Fade, JackInTheBox } from "react-awesome-reveal";
 import { GridBackground } from "@/components/grid";
 import { Button } from "@/components/ui";
 
-type Props = {};
-
-const Hero = (props: Props) => {
+const Hero = () => {
     return (
         <section
             id="about"

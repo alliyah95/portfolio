@@ -8,8 +8,6 @@ import { ContactFormData } from "@/lib/types";
 import { contactSchema } from "@/lib/contact";
 import { Spinner } from "@/components/ui";
 
-type Props = {};
-
 const buttonStatusList = {
     default: (
         <>
@@ -27,7 +25,7 @@ const buttonStatusList = {
     error: <div>Error! Try again.</div>,
 } as const;
 
-const ContactForm = (props: Props) => {
+const ContactForm = () => {
     const [buttonStatus, setButtonStatus] = useState<React.ReactNode>(
         buttonStatusList.default
     );

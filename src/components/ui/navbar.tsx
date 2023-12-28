@@ -5,9 +5,7 @@ import { JackInTheBox } from "react-awesome-reveal";
 import { BsList } from "react-icons/bs";
 import { SocialIcons } from "@/components/ui";
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState<boolean>(false);
     const [isScrolled, setIsScrolled] = useState<boolean>(false);
 

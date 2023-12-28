@@ -3,9 +3,7 @@
 import React, { useState } from "react";
 import { GridCell } from ".";
 
-type Props = {};
-
-const GridBackground = (props: Props) => {
+const GridBackground = () => {
     const [rows, setRows] = useState<number>(9);
     const [cols, setCols] = useState<number>(9);
 

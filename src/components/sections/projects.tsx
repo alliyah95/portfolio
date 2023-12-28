@@ -6,9 +6,7 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import { Button, ProjectCard, SectionInfo } from "@/components/ui";
 import { projectList } from "@/lib/projects";
 
-type Props = {};
-
-const Projects = (props: Props) => {
+const Projects = () => {
     return (
         <>
             <section id="projects">

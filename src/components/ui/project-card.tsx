@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/legacy/image";
 import { Chip } from "@/components/ui";
 
-export type Props = {
+export type ProjectCardProps = {
     thumbnail: string;
     title: string;
     description: string;
@@ -18,7 +18,7 @@ const ProjectCard = ({
     tags,
     url,
     gitHubRepo,
-}: Props) => {
+}: ProjectCardProps) => {
     return (
         <div className="project-card border border-purple-100 rounded-sm h-full">
             <div className="relative project-card-img-container">

@@ -1,10 +1,10 @@
 import React from "react";
 
-type Props = {
+type ChipProps = {
     text: string;
 };
 
-const Chip = ({ text }: Props) => {
+const Chip = ({ text }: ChipProps) => {
     return <div className="chip">{text}</div>;
 };
 

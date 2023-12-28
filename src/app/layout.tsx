@@ -25,11 +25,11 @@ const prata = Prata({
     display: "swap",
 });
 
-type Props = {
+type RootLayoutProps = {
     children: React.ReactNode;
 };
 
-const RootLayout = (props: Props) => {
+const RootLayout = (props: RootLayoutProps) => {
     return (
         <html lang="en">
             <body

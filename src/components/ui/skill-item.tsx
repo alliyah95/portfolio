@@ -1,11 +1,11 @@
 import React from "react";
 
-export type Props = {
+export type SkillItemProps = {
     src: string;
     title: string;
 };
 
-const SkillItem = ({ src, title }: Props) => {
+const SkillItem = ({ src, title }: SkillItemProps) => {
     return (
         <div className="skill-item m-2 flex flex-col justify-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -1,9 +1,7 @@
 import React from "react";
 import { SocialIcons } from "@/components/ui";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
     return (
         <footer className="bg-purple-100 py-8 md:py-12 px-7 md:px-9 xl:px-10">
             <div className="container text-white-200">

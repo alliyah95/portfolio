@@ -2,13 +2,13 @@ import React from "react";
 import { Metadata } from "next";
 import { RiArrowGoBackLine } from "react-icons/ri";
 import { Button } from "@/components/ui";
-type Props = {};
 
 export const metadata: Metadata = {
     title: "Page not found",
 };
-
-const NotFound = (props: Props) => {
+{
+}
+const NotFound = () => {
     return (
         <section className="page-404">
             <div className="container text-center">

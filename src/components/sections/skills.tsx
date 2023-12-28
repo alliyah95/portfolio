@@ -5,9 +5,7 @@ import { JackInTheBox } from "react-awesome-reveal";
 import { SectionInfo, SkillItem } from "@/components/ui";
 import { skillItems } from "@/lib/skills";
 
-type Props = {};
-
-const Skills = (props: Props) => {
+const Skills = () => {
     return (
         <section id="skills" className="skills-section">
             <div className="container text-center">

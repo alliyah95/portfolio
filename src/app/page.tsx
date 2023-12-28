@@ -23,9 +23,7 @@ export const metadata: Metadata = {
     },
 };
 
-type Props = {};
-
-const HomePage = (props: Props) => {
+const HomePage = () => {
     return (
         <>
             <Navbar />

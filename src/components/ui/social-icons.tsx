@@ -4,12 +4,15 @@ import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { JackInTheBox } from "react-awesome-reveal";
 
-type Props = {
+type SocialIconsProps = {
     changeColorOnHover: boolean;
     animate?: boolean;
 };
 
-const SocialIcons = ({ changeColorOnHover, animate = false }: Props) => {
+const SocialIcons = ({
+    changeColorOnHover,
+    animate = false,
+}: SocialIconsProps) => {
     const linkClassNames = changeColorOnHover ? "nav-link" : "";
 
     const content = (

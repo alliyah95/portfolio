@@ -1,6 +1,6 @@
-import { Props as SkillItem } from "@/components/ui/skill-item";
+import { SkillItemProps } from "@/components/ui/skill-item";
 
-export const skillItems: SkillItem[] = [
+export const skillItems: SkillItemProps[] = [
     {
         src: "/images/skills/javascript.svg",
         title: "JavaScript",

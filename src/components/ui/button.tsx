@@ -1,6 +1,6 @@
 import React from "react";
 
-type Props = {
+type ButtonProps = {
     text: string;
     url: string;
     filled?: boolean;
@@ -18,7 +18,7 @@ const Button = ({
     iconPosition,
     fullWidth = false,
     target = "_self",
-}: Props) => {
+}: ButtonProps) => {
     const widthType = fullWidth ? "w-full md:w-auto" : "";
     const buttonType = filled ? "btn--filled" : "btn--outlined";
 

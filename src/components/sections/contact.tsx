@@ -4,9 +4,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { ContactForm } from "@/components/contact";
 
-type Props = {};
-
-const Contact = (props: Props) => {
+const Contact = () => {
     return (
         <section
             id="contact"

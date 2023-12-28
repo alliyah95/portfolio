@@ -1,6 +1,6 @@
-import { Props as ProjectProps } from "@/components/ui/project-card";
+import { ProjectCardProps } from "@/components/ui/project-card";
 
-export const projectList: ProjectProps[] = [
+export const projectList: ProjectCardProps[] = [
     {
         thumbnail: "/images/projects/brain-gain.png",
         title: "Brain Gain",
