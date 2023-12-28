@@ -9,7 +9,7 @@ export const config = {
     matcher: "/api/send",
 };
 
-export const middleware = (request: Request) => {
+export const middleware = (request: Request): NextResponse => {
     const origin = request.headers.get("origin");
 
     if ((origin && !allowedOrigins.includes(origin)) || !origin) {

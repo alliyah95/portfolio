@@ -24,6 +24,6 @@ export const contactSchema: ZodType<ContactFormData> = zod.object({
         }),
 });
 
-export const generateEmailId = () => {
+export const generateEmailId = (): string => {
     return `ID-${nanoid(6)}`;
 };

@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin, BsGlobeAmericas } from "react-icons/bs";
 
 export const runtime = "edge";
 
-const getFont = async (url: URL) => {
+const getFont = async (url: URL): Promise<ArrayBuffer> => {
     const res = await fetch(url);
     return await res.arrayBuffer();
 };
