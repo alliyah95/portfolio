@@ -178,3 +178,12 @@ footer ::selection {
     @apply 2xl:py-9 bg-white-200;
 }
 /* END - nav */
+
+/* START - grid background */
+.grid-background {
+    background-size: 128px 128px;
+    background-image: linear-gradient(to right, #836b9c15 1px, transparent 1px),
+        linear-gradient(to bottom, #836b9c15 1px, transparent 1px);
+    @apply absolute inset-0 -z-10 h-screen overflow-hidden;
+}
+/* END - grid background */

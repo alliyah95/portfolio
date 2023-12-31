@@ -3,8 +3,8 @@
 import React from "react";
 import { BsChat, BsFileEarmark, BsChevronDown } from "react-icons/bs";
 import { Fade, JackInTheBox } from "react-awesome-reveal";
-import { GridBackground } from "@/components/grid";
 import { Button } from "@/components/ui";
+import { GridBackground } from "@/components/grid";
 
 const Hero = () => {
     return (
