@@ -40,6 +40,7 @@ export async function GET() {
                         marginTop: "-32px",
                         fontSize: "28px",
                         fontFamily: "Helvetica",
+                        maxWidth: "564px",
                     }}
                 >
                     A Software Developer specializing in building full-stack web
