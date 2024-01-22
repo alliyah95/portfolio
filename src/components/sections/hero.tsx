@@ -21,7 +21,7 @@ const Hero = () => {
                         </p>
                     </Fade>
 
-                    <Fade triggerOnce={true} delay={300} duration={1000}>
+                    <Fade triggerOnce={true} delay={300} duration={700}>
                         <h1 className="text-purple-100 mb-5 md:mb-7 2xl:mb-9">
                             Alliyah Joyce Sarip
                         </h1>

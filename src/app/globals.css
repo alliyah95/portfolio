@@ -121,13 +121,12 @@
     @apply cursor-pointer relative inline-block;
 }
 .project-link::before {
-    @apply absolute bottom-0 left-0 h-px w-0 bg-white-200 transition-all duration-300;
+    @apply absolute bottom-0 left-0 h-px w-full lg:w-0 bg-white-200 transition-all duration-300;
     content: "";
 }
 .project-card:hover .project-link::before {
     @apply lg:w-full;
 }
-
 /* END - projects section custom CSS */
 
 /* START - selection style */

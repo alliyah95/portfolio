@@ -21,8 +21,8 @@ const Projects = () => {
                         <Fade
                             triggerOnce={true}
                             cascade={true}
-                            damping={0.2}
-                            delay={100}
+                            damping={0.05}
+                            delay={50}
                         >
                             {projectList.map((project, index) => (
                                 <ProjectCard
@@ -38,7 +38,7 @@ const Projects = () => {
                         </Fade>
                     </div>
 
-                    <Fade triggerOnce={true}>
+                    <Fade triggerOnce={true} delay={200}>
                         <div className="flex justify-center mt-7">
                             <Button
                                 text="View all projects"
