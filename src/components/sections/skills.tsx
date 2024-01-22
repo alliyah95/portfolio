@@ -12,14 +12,14 @@ const Skills = () => {
                 <SectionInfo
                     heading="Skills & Technologies"
                     description="These are the languages and technologies that I primarily work with when building software."
+                    descriptionMaxWidth="420px"
                 />
 
                 <div className="max-w-[548px] md:max-w-[642px] lg:max-w-[700px] mx-auto flex justify-center flex-wrap -m-2">
                     <JackInTheBox
                         cascade={true}
-                        damping={0.08}
+                        damping={0.05}
                         triggerOnce={true}
-                        delay={100}
                     >
                         {skillItems.map((skillItem, ind) => (
                             <SkillItem
