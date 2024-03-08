@@ -72,7 +72,7 @@ const Hero = () => {
                 </div>
             </div>
             <JackInTheBox delay={600} duration={1000} triggerOnce={true}>
-                <div className="hero-chevron relative -bottom-28 md:-bottom-44 transition-all duration-200">
+                <div className="hero-chevron relative -bottom-28 md:-bottom-44 2xl:-bottom-28 transition-all duration-200">
                     <div className="animate-bounce">
                         <a href="#skills" className="cursor-pointer">
                             <BsChevronDown className="text-xl md:text-2xl text-purple-100" />
