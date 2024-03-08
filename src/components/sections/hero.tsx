@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { BsChat, BsFileEarmark, BsChevronDown } from "react-icons/bs";
 import { Fade, JackInTheBox } from "react-awesome-reveal";
 import { Button } from "@/components/ui";
@@ -15,10 +16,18 @@ const Hero = () => {
             <GridBackground />
             <div className="container text-center">
                 <div className="hero-info-container">
-                    <Fade triggerOnce={true} duration={300}>
-                        <p className="mb-3 md:mb-4 2xl:mb-6 2xl:text-xl">
-                            Hi there! I am{" "}
-                        </p>
+                    <Fade
+                        triggerOnce={true}
+                        duration={300}
+                        className="flex justify-center"
+                    >
+                        <Image
+                            src="/images/hero-avatar.png"
+                            width={400}
+                            height={400}
+                            alt="A woman with long black hair wearing a white top."
+                            className="h-40 w-auto mb-6 2xl:h-60 2xl:mb-10"
+                        />
                     </Fade>
 
                     <Fade triggerOnce={true} delay={300} duration={700}>
