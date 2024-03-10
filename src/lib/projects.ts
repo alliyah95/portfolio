@@ -2,7 +2,7 @@ import { ProjectCardProps } from "@/components/ui/project-card";
 
 export const projectList: ProjectCardProps[] = [
     {
-        thumbnail: "/images/projects/brain-gain.png",
+        thumbnail: "/images/projects/brain-gain.webp",
         title: "Brain Gain",
         description:
             "A tool that allows users to create, share, and study custom flashcards and tests.",
@@ -17,7 +17,7 @@ export const projectList: ProjectCardProps[] = [
         gitHubRepo: "https://github.com/alliyah95/brain-gain",
     },
     {
-        thumbnail: "/images/projects/spell-it.png",
+        thumbnail: "/images/projects/spell-it.webp",
         title: "Spell It",
         description:
             "A simple spelling application powered by Text-To-Speech (TTS) technology.",
@@ -26,7 +26,7 @@ export const projectList: ProjectCardProps[] = [
         gitHubRepo: "https://github.com/alliyah95/spell-it",
     },
     {
-        thumbnail: "/images/projects/thelescope.png",
+        thumbnail: "/images/projects/thelescope.webp",
         title: "Thelescope",
         description:
             "A record management system with a blockchain-integrated audit log.",
@@ -34,7 +34,7 @@ export const projectList: ProjectCardProps[] = [
         gitHubRepo: "https://github.com/alliyah95/thelescope",
     },
     {
-        thumbnail: "/images/projects/detoX.png",
+        thumbnail: "/images/projects/detoX.webp",
         title: "detoX",
         description:
             "A browser extension hiding 2022 Philippine Election tweets with hate speech on Twitter/X.",

@@ -14,7 +14,7 @@ const Hero = () => {
             <div className="container text-center">
                 <div className="hero-info-container 2xl:pt-20">
                     <Image
-                        src="/images/hero-avatar.png"
+                        src="/images/hero-avatar.webp"
                         width={400}
                         height={400}
                         alt="A woman with long black hair wearing a white top."
