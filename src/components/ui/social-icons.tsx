@@ -1,21 +1,14 @@
-"use client";
-
 import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { JackInTheBox } from "react-awesome-reveal";
 
 type SocialIconsProps = {
     changeColorOnHover: boolean;
-    animate?: boolean;
 };
 
-const SocialIcons = ({
-    changeColorOnHover,
-    animate = false,
-}: SocialIconsProps) => {
+const SocialIcons = ({ changeColorOnHover }: SocialIconsProps) => {
     const linkClassNames = changeColorOnHover ? "nav-link" : "";
 
-    const content = (
+    return (
         <ul className="flex space-x-2 md:space-x-3 justify-center text-lg">
             <li>
                 <a
@@ -37,24 +30,6 @@ const SocialIcons = ({
             </li>
         </ul>
     );
-
-    if (animate) {
-        return (
-            <div>
-                <JackInTheBox
-                    cascade={true}
-                    damping={0.1}
-                    delay={600}
-                    duration={1000}
-                    triggerOnce={true}
-                >
-                    {content}
-                </JackInTheBox>
-            </div>
-        );
-    }
-
-    return content;
 };
 
 export default SocialIcons;
