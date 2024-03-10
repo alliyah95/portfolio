@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 
 type SectionInfoProps = {
     heading: string;
@@ -15,17 +12,15 @@ const SectionInfo = ({
     descriptionMaxWidth = "560px",
 }: SectionInfoProps) => {
     return (
-        <Fade triggerOnce={true} fraction={0.1} delay={100}>
-            <div className="mb-7 md:mb-12 2xl:mb-16">
-                <h2>{heading}</h2>
-                <p
-                    style={{ maxWidth: descriptionMaxWidth }}
-                    className="mx-auto 2xl:text-lg"
-                >
-                    {description}
-                </p>
-            </div>
-        </Fade>
+        <div className="mb-7 md:mb-12 2xl:mb-16">
+            <h2>{heading}</h2>
+            <p
+                style={{ maxWidth: descriptionMaxWidth }}
+                className="mx-auto 2xl:text-lg"
+            >
+                {description}
+            </p>
+        </div>
     );
 };
 

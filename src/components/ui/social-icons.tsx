@@ -1,8 +1,5 @@
-"use client";
-
 import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { JackInTheBox } from "react-awesome-reveal";
 
 type SocialIconsProps = {
     changeColorOnHover: boolean;
@@ -39,19 +36,7 @@ const SocialIcons = ({
     );
 
     if (animate) {
-        return (
-            <div>
-                <JackInTheBox
-                    cascade={true}
-                    damping={0.1}
-                    delay={600}
-                    duration={1000}
-                    triggerOnce={true}
-                >
-                    {content}
-                </JackInTheBox>
-            </div>
-        );
+        return <div>{content}</div>;
     }
 
     return content;
