@@ -30,8 +30,6 @@ const SocialIcons = ({ changeColorOnHover }: SocialIconsProps) => {
             </li>
         </ul>
     );
-
-    return content;
 };
 
 export default SocialIcons;
