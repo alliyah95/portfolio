@@ -12,20 +12,20 @@ const Hero = () => {
         >
             <GridBackground />
             <div className="container text-center">
-                <div className="hero-info-container">
+                <div className="hero-info-container 2xl:pt-20">
                     <Image
                         src="/images/hero-avatar.png"
                         width={400}
                         height={400}
                         alt="A woman with long black hair wearing a white top."
-                        className="h-40 w-auto mb-6 2xl:h-60 2xl:mb-10 mx-auto"
+                        className="w-auto h-40 lg:h-44 2xl:h-52 mb-6 2xl:mb-10 mx-auto "
                     />
 
-                    <h1 className="text-purple-100 mb-5 md:mb-7 2xl:mb-9">
+                    <h1 className="text-purple-100 mb-5 md:mb-7">
                         Alliyah Joyce Sarip
                     </h1>
 
-                    <p className="sm:max-w-[462px] md:max-w-[560px] mx-auto 2xl:text-lg">
+                    <p className="max-w-[400px] 2xl:max-w-[450px] mx-auto 2xl:text-lg">
                         A <span className="font-bold">Software Developer</span>{" "}
                         specializing in building full-stack web applications
                         using the MERN Stack.
@@ -45,14 +45,6 @@ const Hero = () => {
                         icon={<BsFileEarmark />}
                         iconPosition="left"
                     />
-                </div>
-            </div>
-
-            <div className="hero-chevron relative -bottom-28 md:-bottom-44 2xl:-bottom-28 transition-all duration-200">
-                <div className="animate-bounce">
-                    <a href="#skills" className="cursor-pointer">
-                        <BsChevronDown className="text-xl md:text-2xl text-purple-100" />
-                    </a>
                 </div>
             </div>
         </section>
