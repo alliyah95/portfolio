@@ -3,16 +3,12 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 type SocialIconsProps = {
     changeColorOnHover: boolean;
-    animate?: boolean;
 };
 
-const SocialIcons = ({
-    changeColorOnHover,
-    animate = false,
-}: SocialIconsProps) => {
+const SocialIcons = ({ changeColorOnHover }: SocialIconsProps) => {
     const linkClassNames = changeColorOnHover ? "nav-link" : "";
 
-    const content = (
+    return (
         <ul className="flex space-x-2 md:space-x-3 justify-center text-lg">
             <li>
                 <a
@@ -34,10 +30,6 @@ const SocialIcons = ({
             </li>
         </ul>
     );
-
-    if (animate) {
-        return <div>{content}</div>;
-    }
 
     return content;
 };

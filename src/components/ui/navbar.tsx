@@ -83,7 +83,7 @@ const Navbar = () => {
                                 </li>
                             </ul>
                         </div>
-                        <SocialIcons changeColorOnHover={true} animate={true} />
+                        <SocialIcons changeColorOnHover={true} />
                     </div>
                 </div>
             </nav>
