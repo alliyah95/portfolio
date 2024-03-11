@@ -19,6 +19,7 @@ const Hero = () => {
                         height={400}
                         alt="A woman with long black hair wearing a white top."
                         className="w-auto h-40 lg:h-44 2xl:h-52 mb-6 2xl:mb-10 mx-auto "
+                        loading="eager"
                     />
 
                     <h1 className="text-purple-100 mb-5 md:mb-7">
