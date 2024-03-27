@@ -12,6 +12,7 @@
     "dependencies": {
         "@emotion/react": "^11.11.1",
         "@hookform/resolvers": "^3.3.2",
+        "critters": "^0.0.7",
         "nanoid": "^5.0.4",
         "next": "14.0.4",
         "react": "^18",

@@ -12,6 +12,7 @@ const SocialIcons = ({ changeColorOnHover }: SocialIconsProps) => {
         <ul className="flex space-x-2 md:space-x-3 justify-center text-lg">
             <li>
                 <a
+                    aria-label="GitHub profile"
                     href="https://github.com/alliyah95"
                     target="_blank"
                     className={linkClassNames}
@@ -21,6 +22,7 @@ const SocialIcons = ({ changeColorOnHover }: SocialIconsProps) => {
             </li>
             <li>
                 <a
+                    aria-label="LinkedIn profile"
                     href="https://www.linkedin.com/in/alliyahjoyce/"
                     target="_blank"
                     className={linkClassNames}

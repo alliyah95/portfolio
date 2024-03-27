@@ -36,7 +36,11 @@ const Navbar = () => {
                 <div className="container">
                     <div className="flex justify-between items-center">
                         <div>
-                            <button className="nav-btn" onClick={handleNavList}>
+                            <button
+                                className="nav-btn"
+                                onClick={handleNavList}
+                                aria-label="Navigation menu"
+                            >
                                 <BsList className="text-2xl" />
                             </button>
 

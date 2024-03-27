@@ -14,11 +14,12 @@ const Hero = () => {
             <div className="container text-center">
                 <div className="hero-info-container 2xl:pt-20">
                     <Image
-                        src="/images/hero-avatar.png"
+                        src="/images/hero-avatar.webp"
                         width={400}
                         height={400}
                         alt="A woman with long black hair wearing a white top."
                         className="w-auto h-40 lg:h-44 2xl:h-52 mb-6 2xl:mb-10 mx-auto "
+                        loading="eager"
                     />
 
                     <h1 className="text-purple-100 mb-5 md:mb-7">
