@@ -25,7 +25,7 @@ const config: Config = {
                     200: "#F4F3EE",
                 },
                 purple: {
-                    100: "#836B9C",
+                    100: "#755f8c",
                     200: "#6C5585",
                 },
                 black: {
