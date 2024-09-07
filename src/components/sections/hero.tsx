@@ -3,10 +3,9 @@ import Image from 'next/image';
 import { BsChat, BsFileEarmark, BsChevronDown } from 'react-icons/bs';
 import { Button } from '@/components/ui';
 import { GridBackground } from '@/components/grid';
+import { RESUME_URL, SHOW_RESUME_BTN } from '@/lib/constants';
 
 const Hero = () => {
-  const SHOW_RESUME_BTN = process.env.SHOW_RESUME_BTN?.toLowerCase() === 'true';
-
   return (
     <section
       id="about"
@@ -42,7 +41,7 @@ const Hero = () => {
           {SHOW_RESUME_BTN && (
             <Button
               text="Resume"
-              url="#"
+              url={RESUME_URL}
               icon={<BsFileEarmark />}
               iconPosition="left"
             />
